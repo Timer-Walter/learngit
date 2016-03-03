@@ -56,4 +56,15 @@ $ git remote add origin git@github.com:michaelliao/learngit.git （远程仓库为gith
 将本地仓库的内容推送到github仓库：
 $ git push （-u） origin master （-u用于第一次推送）
 
+查看分支：
+$ git branch
+创建分支：
+$ git branch dev (dev为分支名)
+切换分支：
+$ git checkout dev/master (master为主分支)
+合并某分支到当前分支：
+$ git merge dev
+删除分支：
+$ git branch -d dev
+
 
