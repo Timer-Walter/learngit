@@ -44,7 +44,16 @@ $ git reset HEAD readme.txt
 $ git rm test.txt
 $ git commit -m "remove test.txt"（需提交）
 
-
 还原文件区误删的文件：
 $ git checkout -- test.txt（恢复到最新版本）
+
+创建SSH Key：
+$ ssh-keygen -t rsa -C "youremail@example.com"
+
+将远程仓库与本地仓库关联：
+$ git remote add origin git@github.com:michaelliao/learngit.git （远程仓库为github）
+
+将本地仓库的内容推送到github仓库：
+$ git push （-u） origin master （-u用于第一次推送）
+
 
