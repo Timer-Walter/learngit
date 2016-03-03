@@ -1,0 +1,50 @@
+
+git配置设置：
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+
+为当前目录添加Git仓库（git初始化）：
+$ git init
+$ ls -ah (查看.git目录)
+
+将文件添加到仓库：
+$ git add readme.txt
+把文件提交到仓库：
+$ git commit -m "wrote a readme file"
+
+查看仓库当前状态：
+$ git status
+
+查看文件修改内容：
+$ git diff readme.txt 
+
+显示提交日志：
+$ git log
+$ git log --pretty=oneline （简化输出）
+
+回退到上一版本：
+$ git reset --hard HEAD^
+
+回退到某一版本：
+$ git reset --hard 3628164（版本id号）
+
+显示所有命令日志：
+$ git reflog
+
+查看工作区和版本库里面最新版本的区别：
+$ git diff HEAD -- readme.txt 
+
+撤销工作区文件的修改：
+$ git checkout -- readme.txt
+
+撤销暂缓区文件的修改：
+$ git reset HEAD readme.txt
+
+删除版本库中的文件：
+$ git rm test.txt
+$ git commit -m "remove test.txt"（需提交）
+
+
+还原文件区误删的文件：
+$ git checkout -- test.txt（恢复到最新版本）
+
