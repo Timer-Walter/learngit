@@ -100,5 +100,23 @@ $ git pull
 设置dev和origin/dev的链接：
 $ git branch --set-upstream dev origin/dev
 
+给当前最新提交版本打标签：
+$ git tag v1.0
+查看所有标签：
+$ git tag
+给指定提交打标签：
+$ git tag v0.9 6224937
+创建带有说明的标签：
+$ git tag -a v0.1 -m "version 0.1 released" 3628164（-a指定标签名，-m指定说明文字）
+删除标签：
+$ git tag -d v0.1
+推送某个标签到远程：
+$ git push origin v1.0
+一次性推送全部尚未推送到远程的本地标签：
+$ git push origin --tags
+删除远程标签：
+$ git push origin :refs/tags/v0.9
+
+
 
 
